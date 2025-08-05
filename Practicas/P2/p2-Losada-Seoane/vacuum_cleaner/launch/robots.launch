@@ -1,0 +1,26 @@
+<launch>
+  <!-- No namespace here as we will share this description. 
+       Access with slash at the beginning -->
+ 
+ <param name="robot_description" command="xacro $(find turtlebot_description)/robots/kobuki_hexagons_asus_xtion_pro.urdf.xacro" />
+
+  <!-- BEGIN ROBOT 1 (RED)-->
+  <group ns="robot1">
+    <param name="tf_prefix" value="robot1_tf" />
+    <include file="$(find vacuum_cleaner)/launch/one_robot.launch" >
+      <arg name="init_pose" value="-x 1 -y 3 -z 0 -Y 3.1416" /> <!-- South: -Y 0, North: -Y 3.1416, East: -Y 1.5708, West: -Y -1.5708 -->
+      <arg name="sdf_robot_file" default="$(find vacuum_cleaner)/models/robot_red/model.sdf"/>
+      <arg name="robot_name"  value="Robot1" />
+    </include>
+  </group>
+
+  <!-- BEGIN ROBOT 2 (GREEN)-->
+  <group ns="robot2">
+    <param name="tf_prefix" value="robot2_tf" />
+    <include file="$(find vacuum_cleaner)/launch/one_robot.launch" >
+      <arg name="init_pose" value="-x 0 -y 3 -z 0 -Y -1.5708" /> <!-- South: -Y 0, North: -Y 3.1416, East: -Y 1.5708, West: -Y -1.5708 -->
+      <arg name="sdf_robot_file" default="$(find vacuum_cleaner)/models/robot_green/model.sdf"/>
+      <arg name="robot_name"  value="Robot2" />
+    </include>
+  </group>
+</launch>

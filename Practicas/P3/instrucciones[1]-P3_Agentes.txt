@@ -1,0 +1,12 @@
+generar planes: 
+	carpeta: cd catkin_ws/src/ai_rosplan/ai_planning/scripts/
+	ejecutar: ./plan.bash ../../ai_domain/common/domain.pddl ../../ai_domain/common/problem.pddl
+Gazebo:
+	carpeta: cd catkin_ws/src/ai_rosplan/ai_domain/common/
+	ejecutar: roslaunch ai_planning main.launch domain_path:=$PWD/domain.pddl problem_path:=$PWD/problem.pddl
+
+cando ejecutas gazebo para que chufle abres outra terminal e mandas:
+comando: rosrun ai_planning robot_plan.bash 
+./updateKB.bash
+
+***para ejecutar por ejemplo o domain2.pddl cambiao nos comandos de ejecutar e ponlle o problem correspondiente, en este caso problem2.pddl***

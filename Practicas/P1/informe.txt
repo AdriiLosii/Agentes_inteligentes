@@ -1,0 +1,28 @@
+BOX.WORLD:
+-Estado: Success; Time: 56.99431753158569 sec; Comments: Funciona correctamente ya que no hay paredes que puedan influir en el comportamiento del robot
+-Estado: Success; Time: 61.74492335319519 sec; Comments: ""
+-Estado: Success; Time: 60.98682117462158 sec; Comments: ""
+
+
+BIG_SQUARE.WORLD:
+-Estado: Failure; Time: 40.21 sec; Comments: El robot seeker confunde las esquinas con el robot hider
+-Estado: Failure; Time: 55.98 sec; Comments: ""
+-Estado: Success; Time: 144.33 sec; Comments:
+-Estado: Success; Time: 133.81 sec; Comments: 
+-Estado: Success; Time: 87.02 sec; Comments: 
+
+
+MULTIPLE_SQUARES.WORLD:
+-Estado: Failure; Time: 8.942986965179443 sec; Comments: El robot seeker confunde las esquina con el robot hider
+-Estado: Failure; Time: 8.948646545410156 sec; Comments: ""
+-Estado: Failure; Time: 8.94876766204834 sec; Comments: ""
+-Estado: Failure; Time: 8.944819450378418 sec; Comments: ""
+-Estado: Failure; Time: 8.93522024154663; Comments: ""
+
+
+SOFT_WALLS.WORLD:
+-Estado: Success; Time: 44.966264486312866 sec; Comments: Al tratarse de paredes con esquinas "suaves" el algoritmo consigue diferenciarlas del robot hider
+-Estado: Success; Time: 49.74005174636841 sec; Comments: ""
+-Estado: Success; Time: 58.99505877494812 sec; Comments: ""
+-Estado: Success; Time: 35.25031065940857 sec; Comments: ""
+-Estado: Success; Time: 44.47800302505493 sec; Comments: ""

@@ -1,0 +1,4 @@
+<launch>
+    <node pkg='seek_hide' type='seeker.py' name='nodo_seeker' output='screen'/>
+    <node pkg='seek_hide' type='hider.py' name='nodo_hider' output='screen'/>
+</launch>

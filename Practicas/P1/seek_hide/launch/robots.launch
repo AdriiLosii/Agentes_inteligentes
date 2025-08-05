@@ -1,0 +1,26 @@
+<launch>
+  <!-- No namespace here as we will share this description. 
+       Access with slash at the beginning -->
+ 
+ <param name="robot_description" command="xacro $(find turtlebot_description)/robots/kobuki_hexagons_asus_xtion_pro.urdf.xacro" />
+
+  <!-- BEGIN ROBOT 1-->
+  <group ns="robot1">
+    <param name="tf_prefix" value="robot1_tf" />
+    <include file="$(find seek_hide)/launch/one_robot.launch" >
+      <arg name="init_pose" value="-x 7 -y 0 -z 0 -Y 0" />
+      <arg name="sdf_robot_file" default="$(find seek_hide)/models/robot_red/model.sdf"/>
+      <arg name="robot_name"  value="Seeker" />
+    </include>
+  </group>
+
+  <!-- BEGIN ROBOT 2-->
+  <group ns="robot2">
+    <param name="tf_prefix" value="robot2_tf" />
+    <include file="$(find seek_hide)/launch/one_robot.launch" >
+      <arg name="init_pose" value="-x -7 -y 0 -z 0 -Y 3.1416" />
+      <arg name="sdf_robot_file" default="$(find seek_hide)/models/robot_green/model.sdf"/>
+      <arg name="robot_name"  value="Hider" />
+    </include>
+  </group>
+</launch>

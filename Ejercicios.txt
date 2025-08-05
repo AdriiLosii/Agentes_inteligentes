@@ -1,0 +1,69 @@
+Se pretende construir un sistema de aparcamiento automatico, que reciba 
+coches y los situe en las posiciones apropiadas dentro del aparcamiento.
+Para ello, el sistema debe conocer los huecos libres y ocupados, y para 
+los ocupados el coche en particular que lo ocupa. Ademas el sistema dispone 
+de dos ascensores: uno se encarga de aparcar los coches en huecos disponibles 
+en el ala izquierda y otro en el ala derecha del aparcamiento.
+-Representa el problema utilizando logica de predicados.
+-Descrie un estado inicial y final.
+-Describe foralmente en PDDL el operador aparcar con sus parámetros precondiciones 
+y efectos.
+
+Solución:
+Predicados:
+(request ?c - coche): El coche ?c requiere ser aparcado.
+(at ?c  - coche ?p - plaza): Un determinado coche ?c se encuentra en la plaza ?p
+(free ?p -plaza ?pos - position): La plaza ?p se encuentra libre y se encuentra en la 
+posición ?pos que puede ser izquierda o derecha.
+(at ?l - lift ?pos - position): El ascensor ?l se encuentra en la posición ?pos que puede
+ser izquierda o derecha.
+
+Estado inicial:
+(request car1)
+(request car2)
+(free plaza352 left)
+(free plaza812 left)
+(free plaza123 right)
+(at elevator1 left)
+(at elevator2 right)
+
+Estado final:
+Cualquiera donde no existan predicados request.
+
+PDDL:
+(:aparcar park
+:parameters (?c - coche ?p - plaza ?l - lift ?pos - position)
+:precondition ((and(request ?c))(free ?p ?pos)(at ?l ?pos))
+:effect (and(not(request ?c))(not(free ?p ?pos))(at ?c ?plaza)))
+
+
+Problema 3:
+Un operador logístico dispone de una flota C de camiones, cada uno de los cuales 
+puede transportar mercancías de uno o varios tipos, pero no de todos. 
+Además, cada camión ci perteneciente a C puede transportar mercancías hasta un peso 
+máximo Wi. Dado un conjunto de mercancías, cada una d elas cuales está caracterizada 
+por su peso y tipo, se pide determinar qué mercancías se deben cargar en qué camiones 
+para minimizar el número de las que no pueden cargarse en ningún camión.
+-Representar el problema como un espacio de estados.
+-¿Cuales serían las acciones/operadores?
+
+Solución:
+Estado:
+	-Mercacía: Cada mercancía m está caracterizada por un peso y un tipo. También el camión 
+	donde se carga, camion, inicialmente a -1.
+	-Camión: Cada camión c de la flota está caracterizado por el peso máximo que puede 
+	transportar, pero_maximo, una lista con los tipos que puede llevar, tipos, y una 
+	lista con las instancias de las mecancías que contiene, mercancias.
+En el esado inicial se verifica que m.camion = -1 para todas las mercancías, 
+y c-mercancias = para todos los camiones.
+Si en el estado final, m.camion = -1 entoncesm
+	m.peso > c.peso_maximo - SUM m'perteneciente a c.mercancias (m'.peso)
+para todos los camiones, o m-tipo no está entre c.tipos.
+
+Acciones:
+	-Una única acción cargar
+		-Toma como parámetros una mercacía m y un camión c
+		-Precondiciones: m.tipo perteneciente a c.tipos,
+		m.peso + SUM m' perteneciente a c.mercacias (m'.peso <= c.peso_maximo) y m.camion = -1 
+		-Efectos:
+

@@ -1,0 +1,13 @@
+<launch>
+    <arg name="init_pose"/>
+    <arg name="robot_name"/>
+    <arg name="sdf_robot_file"/>
+
+    <node name="spawn_minibot_model" pkg="gazebo_ros" type="spawn_model"
+     args="-file $(arg sdf_robot_file) -sdf $(arg init_pose) -model $(arg robot_name)"
+     respawn="false" output="screen" />
+
+    <node pkg="robot_state_publisher" type="robot_state_publisher" 
+          name="robot_state_publisher" output="screen"/>
+
+</launch>

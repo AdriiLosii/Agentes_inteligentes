@@ -1,0 +1,518 @@
+<?xml version="1.0" ?>
+
+<sdf version="1.5">
+	<world name="default">
+		<!-- A global light source -->
+		<include>
+			<uri>model://sun</uri>
+		</include>
+
+		<!-- A ground plane -->
+		<include>
+			<uri>model://ground_plane</uri>
+		</include>
+
+        <!-- Left wall -->
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_left_01</name>
+            <pose>-10 10 0 0 0 0</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_left_02</name>
+            <pose>-9 10 0 0 0 0</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_left_03</name>
+            <pose>-8 10 0 0 0 0</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_left_04</name>
+            <pose>-7 10 0 0 0 0</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_left_05</name>
+            <pose>-6 10 0 0 0 0</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_left_06</name>
+            <pose>-5 10 0 0 0 0</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_left_07</name>
+            <pose>-4 10 0 0 0 0</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_left_08</name>
+            <pose>-3 10 0 0 0 0</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_left_09</name>
+            <pose>-2 10 0 0 0 0</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_left_10</name>
+            <pose>-1 10 0 0 0 0</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_left_11</name>
+            <pose>0 10 0 0 0 0</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_left_12</name>
+            <pose>1 10 0 0 0 0</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_left_13</name>
+            <pose>2 10 0 0 0 0</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_left_14</name>
+            <pose>3 10 0 0 0 0</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_left_15</name>
+            <pose>4 10 0 0 0 0</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_left_16</name>
+            <pose>5 10 0 0 0 0</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_left_17</name>
+            <pose>6 10 0 0 0 0</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_left_18</name>
+            <pose>7 10 0 0 0 0</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_left_19</name>
+            <pose>8 10 0 0 0 0</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_left_20</name>
+            <pose>9 10 0 0 0 0</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_left_21</name>
+            <pose>10 10 0 0 0 0</pose>
+        </include>
+
+	<!-- Front wall -->
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_front_01</name>
+            <pose>10.5 9.5 0 0 0 1.57</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_front_02</name>
+            <pose>10.5 8.5 0 0 0 1.57</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_front_03</name>
+            <pose>10.5 7.5 0 0 0 1.57</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_front_04</name>
+            <pose>10.5 6.5 0 0 0 1.57</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_front_05</name>
+            <pose>10.5 5.5 0 0 0 1.57</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_front_06</name>
+            <pose>10.5 4.5 0 0 0 1.57</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_front_07</name>
+            <pose>10.5 3.5 0 0 0 1.57</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_front_08</name>
+            <pose>10.5 2.5 0 0 0 1.57</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_front_09</name>
+            <pose>10.5 1.5 0 0 0 1.57</pose>
+        </include>
+        
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_front_10</name>
+            <pose>10.5 0.5 0 0 0 1.57</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_front_11</name>
+            <pose>10.5 -0.5 0 0 0 1.57</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_front_12</name>
+            <pose>10.5 -1.5 0 0 0 1.57</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_front_13</name>
+            <pose>10.5 -2.5 0 0 0 1.57</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_front_14</name>
+            <pose>10.5 -3.5 0 0 0 1.57</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_front_15</name>
+            <pose>10.5 -4.5 0 0 0 1.57</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_front_16</name>
+            <pose>10.5 -5.5 0 0 0 1.57</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_front_17</name>
+            <pose>10.5 -6.5 0 0 0 1.57</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_front_18</name>
+            <pose>10.5 -7.5 0 0 0 1.57</pose>
+        </include>
+
+	<include>
+            <uri>model://wall</uri>
+            <name>wall_front_19</name>
+            <pose>10.5 -8.5 0 0 0 1.57</pose>
+        </include>
+
+	<include>
+            <uri>model://wall</uri>
+            <name>wall_front_20</name>
+            <pose>10.5 -9.5 0 0 0 1.57</pose>
+        </include>
+
+	<!-- Right Wall -->
+
+	<include>
+            <uri>model://wall</uri>
+            <name>wall_right_01</name>
+            <pose>10 -10 0 0 0 0</pose>
+        </include>
+	
+
+	<include>
+            <uri>model://wall</uri>
+            <name>wall_right_02</name>
+            <pose>9 -10 0 0 0 0</pose>
+        </include>
+
+	<include>
+            <uri>model://wall</uri>
+            <name>wall_right_03</name>
+            <pose>8 -10 0 0 0 0</pose>
+        </include>
+
+
+	<include>
+            <uri>model://wall</uri>
+            <name>wall_right_04</name>
+            <pose>7 -10 0 0 0 0</pose>
+        </include>
+
+	<include>
+            <uri>model://wall</uri>
+            <name>wall_right_05</name>
+            <pose>6 -10 0 0 0 0</pose>
+        </include>
+
+	<include>
+            <uri>model://wall</uri>
+            <name>wall_right_06</name>
+            <pose>5 -10 0 0 0 0</pose>
+        </include>
+
+	<include>
+            <uri>model://wall</uri>
+            <name>wall_right_07</name>
+            <pose>4 -10 0 0 0 0</pose>
+        </include>
+
+	<include>
+            <uri>model://wall</uri>
+            <name>wall_right_08</name>
+            <pose>3 -10 0 0 0 0</pose>
+        </include>
+
+	<include>
+            <uri>model://wall</uri>
+            <name>wall_right_09</name>
+            <pose>2 -10 0 0 0 0</pose>
+        </include>
+
+	<include>
+            <uri>model://wall</uri>
+            <name>wall_right_10</name>
+            <pose>1 -10 0 0 0 0</pose>
+        </include>
+
+    <include>
+            <uri>model://wall</uri>
+            <name>wall_right_11</name>
+            <pose>0 -10 0 0 0 0</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_right_12</name>
+            <pose>-1 -10 0 0 0 0</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_right_13</name>
+            <pose>-2 -10 0 0 0 0</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_right_14</name>
+            <pose>-3 -10 0 0 0 0</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_right_15</name>
+            <pose>-4 -10 0 0 0 0</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_right_16</name>
+            <pose>-5 -10 0 0 0 0</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_right_17</name>
+            <pose>-6 -10 0 0 0 0</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_right_18</name>
+            <pose>-7 -10 0 0 0 0</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_right_19</name>
+            <pose>-8 -10 0 0 0 0</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_right_20</name>
+            <pose>-9 -10 0 0 0 0</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_right_21</name>
+            <pose>-10 -10 0 0 0 0</pose>
+        </include>
+
+    <!-- Back wall -->
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_back_01</name>
+            <pose>-10.5 9.5 0 0 0 1.57</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_back_02</name>
+            <pose>-10.5 8.5 0 0 0 1.57</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_back_03</name>
+            <pose>-10.5 7.5 0 0 0 1.57</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_back_04</name>
+            <pose>-10.5 6.5 0 0 0 1.57</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_back_05</name>
+            <pose>-10.5 5.5 0 0 0 1.57</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_back_06</name>
+            <pose>-10.5 4.5 0 0 0 1.57</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_back_07</name>
+            <pose>-10.5 3.5 0 0 0 1.57</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_back_08</name>
+            <pose>-10.5 2.5 0 0 0 1.57</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_back_09</name>
+            <pose>-10.5 1.5 0 0 0 1.57</pose>
+        </include>
+        
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_back_10</name>
+            <pose>-10.5 0.5 0 0 0 1.57</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_back_11</name>
+            <pose>-10.5 -0.5 0 0 0 1.57</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_back_12</name>
+            <pose>-10.5 -1.5 0 0 0 1.57</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_back_13</name>
+            <pose>-10.5 -2.5 0 0 0 1.57</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_back_14</name>
+            <pose>-10.5 -3.5 0 0 0 1.57</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_back_15</name>
+            <pose>-10.5 -4.5 0 0 0 1.57</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_back_16</name>
+            <pose>-10.5 -5.5 0 0 0 1.57</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_back_17</name>
+            <pose>-10.5 -6.5 0 0 0 1.57</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_back_18</name>
+            <pose>-10.5 -7.5 0 0 0 1.57</pose>
+        </include>
+
+	<include>
+            <uri>model://wall</uri>
+            <name>wall_back_19</name>
+            <pose>-10.5 -8.5 0 0 0 1.57</pose>
+        </include>
+
+	<include>
+            <uri>model://wall</uri>
+            <name>wall_back_20</name>
+            <pose>-10.5 -9.5 0 0 0 1.57</pose>
+        </include>
+
+	</world>
+</sdf>
